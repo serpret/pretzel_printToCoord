@@ -15,6 +15,8 @@
 //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 
+
+
 //================= Class Modifiers ==================================
 //----------------------------------------------
 //  void setWindow(int cols, int rows)
@@ -40,6 +42,8 @@
 //                  str is put into the string buffer at col, row
 //                  coordinates
 //====================================================================
+
+
 
 //================  Class accessors ==================================
 //----------------------------------------------
@@ -67,6 +71,8 @@ namespace PRETZEL
             void setWindow( int cols, int rows);
             void addStr( std::string str, int col, int row, AlignType alignment);
             void print();
+            friend std::ostream &operator<<( std::ostream &output, 
+                                             PrintToCoord printMe);
         private:
             int windowRows{1};
             int windowCols{1};
