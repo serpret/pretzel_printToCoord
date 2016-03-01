@@ -58,6 +58,18 @@
 
 
 
+//================  Friend Functions =================================
+//----------------------------------------------
+//  friend ostream &operator<<( ostream &output,  PrintToCoord printMe)
+//      Description:
+//              the string buffer is sent to the ostream output
+//      Precondition:
+//              none
+//      Postcondition:
+//              the string buffer is sent to the ostream output
+//====================================================================
+
+
 
 namespace PRETZEL
 {

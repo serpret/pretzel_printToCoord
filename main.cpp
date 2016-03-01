@@ -8,6 +8,8 @@ int main()
     PrintToCoord a1;
 
     a1.setWindow(10,10);
+    a1.addStr( "XXXXXXXXXXX", 3, -1, PrintToCoord::alignLeft);
+    a1.addStr( "XXXXXXXXXXX", 3, 11, PrintToCoord::alignLeft);
     a1.addStr( "------------", 0, 2, PrintToCoord::alignLeft);
     a1.addStr( "hello", 2, 2, PrintToCoord::alignLeft);
     a1.addStr( "123456789_123456789_123456789", -2, 3, PrintToCoord::alignLeft);
